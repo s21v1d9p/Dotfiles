@@ -3,12 +3,18 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/svdp/.oh-my-zsh"
+PATH="$HOME/.cargo/bin${PATH:+:${PATH}}"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
+
+# Keep 10000 lines of history within the shell and save it to ~/.zsh_history:
+HISTSIZE=10000
+SAVEHIST=10000
+HISTFILE=~/.zsh_history
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -33,13 +39,13 @@ DISABLE_UPDATE_PROMPT="true"
 export UPDATE_ZSH_DAYS=7
 
 # Uncomment the following line if pasting URLs and other text is messed up.
-# DISABLE_MAGIC_FUNCTIONS="true"
+DISABLE_MAGIC_FUNCTIONS="true"
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
+DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
 ENABLE_CORRECTION="true"
@@ -70,7 +76,7 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git vi-mode zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -88,6 +94,12 @@ source $ZSH/oh-my-zsh.sh
    export EDITOR='nvim'
  fi
 
+#ls alias
+alias ls='exa -al --color=always --group-directories-first'
+
+#MODE_INDICATOR
+MODE_INDICATOR="%F{yellow}+%f"
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -100,8 +112,3 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias htop='TERM=xterm-color htop'
-#Load zsh-syntax-highlighting; should be last.
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-#Load zsh-autosuggestions; should be last.
-source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
