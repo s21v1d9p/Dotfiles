@@ -111,4 +111,4 @@ MODE_INDICATOR="%F{yellow}+%f"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias htop='TERM=xterm-color htop'
+#alias htop='TERM=xterm-color htop'
