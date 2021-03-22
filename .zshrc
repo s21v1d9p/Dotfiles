@@ -13,8 +13,16 @@ ZSH_THEME="robbyrussell"
 
 # Keep 10000 lines of history within the shell and save it to ~/.zsh_history:
 HISTSIZE=10000
-SAVEHIST=10000
+SAVEHIST=20000
 HISTFILE=~/.zsh_history
+setopt hist_expire_dups_first # delete duplicates first when HISTFILE size exceeds HISTSIZE
+setopt hist_ignore_dups       # ignore duplicated commands history list
+setopt hist_ignore_space      # ignore commands that start with space
+setopt hist_verify            # show command with history expansion to user before running it
+#setopt share_history         # share command history data
+
+# force zsh to show the complete history
+alias history="history 0"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -100,6 +108,11 @@ alias ls='exa -al --color=always --group-directories-first'
 #MODE_INDICATOR
 MODE_INDICATOR="%F{yellow}+%f"
 
+# some more ls aliases
+alias ll='ls -l'
+alias la='ls -A'
+alias l='ls -CF'
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -111,4 +124,4 @@ MODE_INDICATOR="%F{yellow}+%f"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-#alias htop='TERM=xterm-color htop'
+# alias htop='TERM=xterm-color htop'
