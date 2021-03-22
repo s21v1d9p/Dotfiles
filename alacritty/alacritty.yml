@@ -44,9 +44,9 @@ window:
   #
   # Blank space added around the window in pixels. This padding is scaled
   # by DPI and the specified value is always added at both opposing sides.
-  padding:
-    x: 6
-    y: 6
+  #padding:
+    #x: 6
+    #y: 6
 
   # Spread additional padding evenly around the terminal content.
   #dynamic_padding: false
@@ -90,7 +90,7 @@ window:
   #
   # Override the variant of the GTK theme. Commonly supported values are `dark`
   # and `light`. Set this to `None` to use the default theme variant.
-  gtk_theme_variant: dark
+  # gtk_theme_variant: none
 
 #scrolling:
   # Maximum number of lines in the scrollback buffer.
@@ -116,12 +116,12 @@ font:
     style: Regular
 
   # Bold font face
-  #bold:
+    #bold:
     # Font family
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    #family: monospace
+    #family: Fira Mono
 
     # The `style` can be specified to pick a specific face.
     #style: Bold
@@ -132,7 +132,7 @@ font:
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    #family: monospace
+    #family: Fira Mono
 
     # The `style` can be specified to pick a specific face.
     #style: Italic
@@ -143,13 +143,13 @@ font:
     #
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    #family: monospace
+    #family: Fira Mono
 
     # The `style` can be specified to pick a specific face.
     #style: Bold Italic
 
   # Point size
-  size: 13.0
+  size: 12.0
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
@@ -175,11 +175,11 @@ font:
 #draw_bold_text_with_bright_colors: false
 
 # Colors (Tomorrow Night)
-#colors:
+colors:
   # Default colors
-  #primary:
-  #  background: '#1d1f21'
-  #  foreground: '#c5c8c6'
+  primary:
+    background: '#333333'
+    foreground: '#F2F2F2'
 
     # Bright and dim foreground colors
     #
@@ -261,31 +261,31 @@ font:
   #
   # Allowed values are CellForeground/CellBackground, which reference the
   # affected cell, or hexadecimal colors like #ff00ff.
-  #selection:
-  #  text: CellBackground
+selection:
+    text: '0xbbc2cf'
   #  background: CellForeground
 
   # Normal colors
-  #normal:
-  #  black:   '#1d1f21'
-  #  red:     '#cc6666'
-  #  green:   '#b5bd68'
-  #  yellow:  '#f0c674'
-  #  blue:    '#81a2be'
-  #  magenta: '#b294bb'
-  #  cyan:    '#8abeb7'
-  #  white:   '#c5c8c6'
+normal:
+    black:   '#333333'
+    red:     '#CC0000'
+    green:   '#4E9A06'
+    yellow:  '#C4A000'
+    blue:    '#3465A4'
+    magenta: '#75507B'
+    cyan:    '#06989A'
+    white:   '#D3D7CF'
 
   # Bright colors
-  #bright:
-  #  black:   '#666666'
-  #  red:     '#d54e53'
-  #  green:   '#b9ca4a'
-  #  yellow:  '#e7c547'
-  #  blue:    '#7aa6da'
-  #  magenta: '#c397d8'
-  #  cyan:    '#70c0b1'
-  #  white:   '#eaeaea'
+bright:
+    black:   '#88807C'
+    red:     '#F15D22'
+    green:   '#73C48F'
+    yellow:  '#FFCE51'
+    blue:    '#48B9C7'
+    magenta: '#AD7FA8'
+    cyan:    '#34E2E2'
+    white:   '#EEEEEC'
 
   # Dim colors
   #
@@ -356,7 +356,7 @@ font:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-#background_opacity: 1.0
+background_opacity: 1.5
 
 #selection:
   # This string contains all characters that are used as separators for
@@ -371,7 +371,7 @@ font:
   #style:
     # Cursor shape
     #
-    # Values for `shape`:
+    #Values for `shape`:
     #   - ▇ Block
     #   - _ Underline
     #   - | Beam
@@ -379,12 +379,12 @@ font:
 
     # Cursor blinking state
     #
-    # Values for `blinking`:
+#Values for `blinking`:
     #   - Never: Prevent the cursor from ever blinking
     #   - Off: Disable blinking by default
     #   - On: Enable blinking by default
     #   - Always: Force the cursor to always blink
-    #blinking: Off
+#blinking: On
 
   # Vi mode cursor style
   #
