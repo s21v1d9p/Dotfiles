@@ -269,7 +269,7 @@ selection:
 normal:
     black:   '#333333'
     red:     '#CC0000'
-    green:   '#4E9A06'
+    green:   '#73C48F'
     yellow:  '#C4A000'
     blue:    '#3465A4'
     magenta: '#75507B'
@@ -280,7 +280,7 @@ normal:
 bright:
     black:   '#88807C'
     red:     '#F15D22'
-    green:   '#73C48F'
+    green:   '#4E9A06'
     yellow:  '#FFCE51'
     blue:    '#48B9C7'
     magenta: '#AD7FA8'
