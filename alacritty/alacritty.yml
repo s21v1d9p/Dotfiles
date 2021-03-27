@@ -265,7 +265,7 @@ selection:
     text: '0xbbc2cf'
   #  background: CellForeground
 
-  # Normal colors
+# Normal colors
 normal:
     black:   '#333333'
     red:     '#CC0000'
@@ -280,7 +280,7 @@ normal:
 bright:
     black:   '#88807C'
     red:     '#F15D22'
-    green:   '#4E9A06'
+    green:   '#73C48F'
     yellow:  '#FFCE51'
     blue:    '#48B9C7'
     magenta: '#AD7FA8'
@@ -356,7 +356,7 @@ bright:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 1.5
+background_opacity: 1
 
 #selection:
   # This string contains all characters that are used as separators for
