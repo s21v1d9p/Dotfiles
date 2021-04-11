@@ -1,18 +1,22 @@
 [Desktop Entry]
+Version=0.7.2
 Type=Application
-TryExec=alacritty
+Name=Alacritty
 Exec=alacritty
-Icon=Alacritty
-Terminal=false
-Icon=/usr/share/pixmaps/Alacritty.svg
+GenericName=Terminal emulator
+Comment=A fast, cross-platform, OpenGL terminal emulator
+TryExec=/home/svdp/.cargo/bin/alacritty
+Icon=/usr/share/pixmaps/alacritty-term.svg
+#Terminal=false
+#Icon=Alacritty
 Categories=System;TerminalEmulator;
 
-Name=Alacritty
-GenericName=Terminal
-Comment=A fast, cross-platform, OpenGL terminal emulator
-StartupWMClass=Alacritty
-Actions=New;
+#Name=Alacritty
+#GenericName=Terminal
+#Comment=A fast, cross-platform, OpenGL terminal emulator
+#StartupWMClass=Alacritty
+#Actions=New;
 
-[Desktop Action New]
-Name=New Terminal
-Exec=alacritty
+#[Desktop Action New]
+#Name=New Terminal
+#Exec=/home/svdp/.cargo/bin/alacritty
