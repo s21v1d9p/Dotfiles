@@ -178,7 +178,10 @@
   # OS identifier color.
   typeset -g POWERLEVEL9K_OS_ICON_FOREGROUND=255
   # Custom icon.
-  # typeset -g POWERLEVEL9K_OS_ICON_CONTENT_EXPANSION='⭐'
+  # (Penguine Logo)
+  # typeset -g POWERLEVEL9K_OS_ICON_CONTENT_EXPANSION=$'\uF17C'
+  # (Arch Logo)
+  typeset -g POWERLEVEL9K_OS_ICON_CONTENT_EXPANSION=$'\uF303'
 
   ################################[ prompt_char: prompt symbol ]################################
   # Transparent background.
