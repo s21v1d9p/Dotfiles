@@ -111,16 +111,24 @@ source $ZSH/oh-my-zsh.sh
    export EDITOR='nano' 
  fi
 
-#ls alias
-alias ls='exa -al --color=always --group-directories-first'
+# ls alias
+# I use exa which is a modern replacement for ls written in rust
+alias ls='exa -al --color=always --group-directories-first' # my preferred listing
+alias la='exa -a --color=always --group-directories-first'  # all files and dirs
+alias ll='exa -l --color=always --group-directories-first'  # long format
+alias lt='exa -aT --color=always --group-directories-first' # tree listing
+alias l.='exa -a | egrep "^\."' #list dotfiles
 
 #MODE_INDICATOR
 MODE_INDICATOR="%F{yellow}+%f"
 
 # some more ls aliases
-alias ll='ls -l'
-alias la='ls -A'
-alias l='ls -CF'
+alias update='sudo pacman -Syyu'
+# alias update = 'yay -Syuu'
+# alias ll='ls -l'
+# alias la='ls -A'
+# alias l='ls -CF'
+
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
