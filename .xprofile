@@ -1,0 +1,21 @@
+#!/bin/sh
+
+#Polkit
+lxsession &
+
+# Picom
+picom &
+
+# Dwmblocks
+dwmblocks &
+
+#Wallpaper
+nitrogen --restore &
+
+# Loop
+while true; do
+	 dwm >/dev/null 2>&1
+done
+
+# Execute DWM
+exec dwm
