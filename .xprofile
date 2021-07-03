@@ -1,13 +1,10 @@
 #!/bin/sh
 
-#Polkit
-lxsession &
-
 # Picom
 picom &
 
-# Dwmblocks
-dwmblocks &
+# Slstatus
+slstatus &
 
 #Wallpaper
 nitrogen --restore &
