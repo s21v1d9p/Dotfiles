@@ -1,6 +1,8 @@
 setxkbmap -option caps:swapescape &
 xset r rate 300 50 &
+clipmenud &
+nm-applet &
 lxsession &
-picom &
+#picom &
 slstatus &
 nitrogen --restore &
