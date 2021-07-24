@@ -3,6 +3,7 @@ xset r rate 300 50 &
 clipmenud &
 nm-applet &
 lxsession &
-#picom &
+picom &
 slstatus &
 nitrogen --restore &
+#kdeconnect-indicator &
