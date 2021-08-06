@@ -7,6 +7,9 @@
 # |____/ \_/ |____/| .__/
 #                  |_|
 
+
+autoload -U colors && colors	# Load colors
+PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 setopt autocd		# Automatically cd into typed directory.
 stty stop undef		# Disable ctrl-s to freeze terminal.
 setopt interactive_comments
@@ -66,9 +69,6 @@ alias mirrora="sudo reflector --latest 50 --number 20 --sort age --save /etc/pac
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
-
-# starship promt
-eval "$(starship init zsh)"
 
 #zsh auto suggestions and syntax highlighting on Arch
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
