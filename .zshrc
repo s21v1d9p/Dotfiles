@@ -79,5 +79,11 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 #source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # pfetch is like neofetch
-pfetch
+# pfetch
+
+#Little fix for in st Text gets truncated instead of resized
+#if [ -z "$TMUX" ]
+#then
+#    tmux attach -t TMUX || tmux new -s TMUX
+#fi
 

@@ -7,4 +7,5 @@ lxpolkit &
 picom &
 slstatus &
 nitrogen --restore &
+redshift &
 #kdeconnect-indicator &
