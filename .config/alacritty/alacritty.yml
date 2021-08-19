@@ -243,12 +243,11 @@ colors:
   # affected cell, or hexadecimal colors like #ff00ff.
   #
 selection:
-    text: '0xbbc2cf'
-  #  background: CellForeground
-
+    text:       CellBackground
+    background: CellForeground
 # Normal colors
 normal:
-    black:   '#282828'
+    black:   *gruvbox_dark_bg
     red:     '#cc241d'
     green:   '#98971a'
     yellow:  '#d79921'
@@ -266,21 +265,21 @@ bright:
     blue:    '#83a598'
     magenta: '#d3869b'
     cyan:    '#8ec07c'
-    white:   '#ebdbb2'
 
   # Dim colors
   #
   # If the dim colors are not set, they will be calculated automatically based
   # on the `normal` colors.
-  #dim:
-  #  black:   '#131415'
-  #  red:     '#864343'
-  #  green:   '#777c44'
-  #  yellow:  '#9e824c'
-  #  blue:    '#556a7d'
-  #  magenta: '#75617b'
-  #  cyan:    '#5b7d78'
-  #  white:   '#828482'
+dim:
+    black:   '#32302f'
+    red:     '#9d0006'
+    green:   '#79740e'
+    yellow:  '#b57614'
+    blue:    '#076678'
+    magenta: '#8f3f71'
+    cyan:    '#427b58'
+    white:   '#928374'
+  # indexed_colors: []
 
   # Indexed Colors
   # The indexed colors include all colors from 16 to 256.
