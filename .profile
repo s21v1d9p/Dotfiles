@@ -10,3 +10,6 @@ export READER="zathura"
 
 #For Qt5ct
 export QT_QPA_PLATFORMTHEME=qt5ct
+
+#Fix for java application
+export _JAVA_AWT_WM_NONREPARENTING=1
