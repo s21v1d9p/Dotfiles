@@ -50,7 +50,7 @@ alias history="history 0"
 # DISABLE_LS_COLORS="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
+ DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
  ENABLE_CORRECTION="true"
@@ -114,7 +114,7 @@ source $ZSH/oh-my-zsh.sh
 # other alias
 alias vim="nvim"
 alias v="nvim"
-alias update="sudo apt update && sudo apt full-upgrade"
+#alias update="sudo apt update && sudo apt full-upgrade"
 
 # Colorize grep output (good for log files)
 alias grep='grep --color=auto'
