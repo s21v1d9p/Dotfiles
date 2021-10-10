@@ -13,6 +13,7 @@ export QT_QPA_PLATFORMTHEME=qt5ct
 
 #Fix for java application
 export _JAVA_AWT_WM_NONREPARENTING=1
+export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on'
 
 # Other XDG paths
 export XDG_DATA_HOME=${XDG_DATA_HOME:="$HOME/.local/share"}
