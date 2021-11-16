@@ -8,7 +8,7 @@ export ZSH="/home/svdp/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="arrow"
 
 # History
 HISTSIZE=10000
@@ -114,7 +114,7 @@ source $ZSH/oh-my-zsh.sh
 # other alias
 alias vim="nvim"
 alias v="nvim"
-#alias update="sudo apt update && sudo apt full-upgrade"
+alias update="sudo apt update && sudo apt full-upgrade && flatpak update && sudo snap refresh"
 
 # Colorize grep output (good for log files)
 alias grep='grep --color=auto'
@@ -122,9 +122,9 @@ alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
 #zsh auto suggestions and syntax highlighting on Ubuntu
-#source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-#source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 #zsh auto suggestions and syntax highlighting on Arch
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+#source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
