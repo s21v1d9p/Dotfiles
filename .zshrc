@@ -96,7 +96,7 @@ source $ZSH/oh-my-zsh.sh
  if [[ -n $SSH_CONNECTION ]]; then
    export EDITOR='vim'
  else
-   export EDITOR='mvim'
+   export EDITOR='nvim'
  fi
 
 # Compilation flags
@@ -114,14 +114,14 @@ source $ZSH/oh-my-zsh.sh
 # other alias
 alias vim="nvim"
 alias v="nvim"
-alias update="sudo apt update && sudo apt full-upgrade && flatpak update && sudo snap refresh"
+alias update="sudo dnf update && flatpak update" # Fedora
 
 # Colorize grep output (good for log files)
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
-#zsh auto suggestions and syntax highlighting on Ubuntu
+#zsh auto suggestions and syntax highlighting on Ubuntu & Fedora
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
