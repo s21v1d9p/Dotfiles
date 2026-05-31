@@ -23,17 +23,22 @@ Dotfiles/
 │   ├── alacritty/            # GPU-accelerated terminal config
 │   ├── dunst/                # System notifications daemon config
 │   ├── fontconfig/           # Custom font rendering settings
-│   ├── gtk-3.0/              # GTK application themes
+│   ├── git/                  # Global Git ignore patterns
 │   ├── ghostty/              # Ghostty terminal config
+│   ├── gtk-3.0/              # GTK application themes
+│   ├── htop/                 # Htop process monitor settings
 │   ├── kitty/                # Terminal emulator config
 │   ├── nvim/                 # Neovim settings
 │   └── redshift/             # Blue-light filter configs
 ├── .dwm/                     # Dynamic Window Manager config & autostart
+├── .gitconfig                # Git global config (with local overrides)
+├── .gitignore                # Git repository patterns to ignore
 ├── .local/
 │   └── bin/                  # Custom system & status-bar scripts
 ├── etc/                      # Global configurations (LightDM, locale, X11)
 ├── usr/                      # System assets (wallpapers and icons)
 └── README.md
+
 ```
 
 ---
