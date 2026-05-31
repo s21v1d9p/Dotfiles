@@ -1,0 +1,18 @@
+#!/bin/sh
+
+# Picom
+picom &
+
+# Slstatus
+slstatus &
+
+#Wallpaper
+nitrogen --restore &
+
+# Loop
+while true; do
+	 dwm >/dev/null 2>&1
+done
+
+# Execute DWM
+exec dwm
