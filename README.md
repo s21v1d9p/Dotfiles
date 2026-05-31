@@ -8,7 +8,7 @@ Welcome to my personal, cross-platform configuration archive. These dotfiles are
 
 *   **💻 Shell & Prompt:** Zsh powered by `powerlevel10k` and `starship` for a fast, informative, and context-aware prompt.
 *   **✍️ Editor:** Optimized, lightweight **Neovim (nvim)** configuration for coding efficiency.
-*   **🐚 Terminal Emulators:** Dual support for **Alacritty** and **Kitty** terminal emulators, configured for visual consistency and GPU performance.
+*   **🐚 Terminal Emulators:** Support for **Alacritty**, **Kitty**, and **Ghostty** terminal emulators, configured for visual consistency and GPU performance.
 *   **🔔 System Alerts:** Clean **Dunst** notification daemon setup for structured system messages.
 *   **📦 Environment Utilities:** Auto-activation of Python virtual environments (`venv`/`.venv`) on directory entry.
 *   **🛡️ Security First:** macOS Keychain integration to load API keys securely into memory without hardcoding secrets in configuration files.
@@ -24,6 +24,7 @@ Dotfiles/
 │   ├── dunst/                # System notifications daemon config
 │   ├── fontconfig/           # Custom font rendering settings
 │   ├── gtk-3.0/              # GTK application themes
+│   ├── ghostty/              # Ghostty terminal config
 │   ├── kitty/                # Terminal emulator config
 │   ├── nvim/                 # Neovim settings
 │   └── redshift/             # Blue-light filter configs
@@ -57,7 +58,7 @@ Supported keys out-of-the-box: `GEMINI_API_KEY`, `OPENAI_API_KEY`, `ANTHROPIC_AP
 ### Dependencies
 Make sure you have the following installed on your system:
 *   **Shell:** `zsh`, `fzf`, `starship`
-*   **Terminal:** `alacritty` or `kitty`
+*   **Terminal:** `alacritty`, `kitty`, or `ghostty`
 *   **Editor:** `neovim`
 *   **Fonts:** `JetBrains Mono`
 

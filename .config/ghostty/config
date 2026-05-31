@@ -1,0 +1,108 @@
+# Font
+font-family = "JetBrains Mono"
+font-family-bold = "JetBrains Mono"
+font-family-italic = "JetBrains Mono"
+font-family-bold-italic = "JetBrains Mono"
+font-style = Regular
+font-style-bold = Bold
+font-style-italic = Italic
+font-style-bold-italic = Bold Italic
+font-size = 17
+font-feature = calt
+font-feature = liga
+
+# Theme & Colors (Pitch black, high contrast terminal surface)
+theme = GitHub Dark High Contrast
+background = #000000
+foreground = #f0f3f6
+background-opacity = 1
+background-opacity-cells = false
+background-blur = false
+minimum-contrast = 3
+selection-foreground = #000000
+selection-background = #9ecbff
+cursor-color = #ffffff
+cursor-text = #000000
+cursor-style = bar
+cursor-style-blink = false
+unfocused-split-opacity = 0.86
+unfocused-split-fill = #000000
+split-divider-color = #30363d
+
+# Window layout
+window-width = 120
+window-height = 36
+window-padding-x = 8
+window-padding-y = 6
+window-padding-balance = true
+window-padding-color = background
+window-theme = dark
+window-save-state = always
+window-step-resize = true
+window-new-tab-position = current
+window-inherit-working-directory = true
+tab-inherit-working-directory = true
+split-inherit-working-directory = true
+window-inherit-font-size = true
+resize-overlay = after-first
+resize-overlay-position = top-right
+focus-follows-mouse = true
+split-preserve-zoom = navigation
+
+# macOS behavior
+macos-titlebar-style = transparent
+macos-titlebar-proxy-icon = hidden
+macos-dock-drop-behavior = new-tab
+macos-option-as-alt = true
+macos-auto-secure-input = true
+macos-secure-input-indication = true
+macos-shortcuts = ask
+quit-after-last-window-closed = false
+auto-update = check
+auto-update-channel = stable
+
+# Shell, scrollback, links, and clipboard
+shell-integration = detect
+shell-integration-features = cursor,sudo,title,ssh-env,ssh-terminfo,path
+scrollback-limit = 50000000
+scrollbar = never
+scroll-to-bottom = keystroke,no-output
+link-url = true
+# Security: Link previews are disabled to prevent accidental outbound HTTP requests (which can leak IP addresses or auth tokens) when hovering over printed URLs.
+link-previews = false
+copy-on-select = clipboard
+clipboard-read = ask
+clipboard-write = allow
+clipboard-trim-trailing-spaces = true
+clipboard-paste-protection = true
+clipboard-paste-bracketed-safe = true
+mouse-hide-while-typing = true
+mouse-shift-capture = never
+mouse-reporting = true
+right-click-action = context-menu
+notify-on-command-finish = unfocused
+notify-on-command-finish-action = notify,no-bell
+notify-on-command-finish-after = 20s
+
+# Productivity keybinds
+keybind = global:ctrl+grave_accent=toggle_quick_terminal
+keybind = super+shift+r=reload_config
+keybind = super+shift+enter=toggle_split_zoom
+keybind = super+alt+enter=toggle_fullscreen
+keybind = super+shift+e=equalize_splits
+keybind = super+shift+backspace=clear_screen
+keybind = super+shift+u=toggle_mouse_reporting
+keybind = super+shift+o=toggle_tab_overview
+keybind = super+alt+left=move_tab:-1
+keybind = super+alt+right=move_tab:1
+keybind = super+ctrl+left=resize_split:left,10
+keybind = super+ctrl+right=resize_split:right,10
+keybind = super+ctrl+up=resize_split:up,10
+keybind = super+ctrl+down=resize_split:down,10
+
+# Quick terminal
+quick-terminal-position = top
+quick-terminal-screen = main
+quick-terminal-animation-duration = 0.12
+quick-terminal-autohide = true
+quick-terminal-space-behavior = move
