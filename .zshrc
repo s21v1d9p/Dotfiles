@@ -132,8 +132,10 @@ zstyle ':completion:*' cache-path "$HOME/.zcompcache"
 
 export LC_ALL=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8
-export JAVA_HOME=$(/usr/libexec/java_home -v 21.0.7)
-export PATH=$JAVA_HOME/bin:$PATH
+if [[ -x /usr/libexec/java_home ]]; then
+  export JAVA_HOME=$(/usr/libexec/java_home -v 21.0.7)
+  export PATH=$JAVA_HOME/bin:$PATH
+fi
 export HOMEBREW_NO_AUTO_UPDATE=1
 
 export NVM_DIR="$HOME/.nvm"
@@ -145,9 +147,12 @@ load_keychain_secret() {
   local service_name="shell/$env_name"
   local secret
 
-  secret="$(security find-generic-password -a "$USER" -s "$service_name" -w 2>/dev/null)" || return 0
-  export "$env_name=$secret"
+  if command -v security >/dev/null 2>&1; then
+    secret="$(security find-generic-password -a "$USER" -s "$service_name" -w 2>/dev/null)" || return 0
+    export "$env_name=$secret"
+  fi
 }
+
 
 load_keychain_secret GEMINI_API_KEY
 load_keychain_secret OPENAI_API_KEY
@@ -290,6 +295,10 @@ set_keychain_secret() {
     echo "Usage: set_keychain_secret VARIABLE_NAME"
     return 1
   fi
+  if ! command -v security >/dev/null 2>&1; then
+    echo "❌ security command not found. This helper requires macOS Keychain."
+    return 1
+  fi
   local service_name="shell/$env_name"
   local secret
   read -s "secret?Enter value for $env_name: "
@@ -303,6 +312,7 @@ set_keychain_secret() {
     echo "❌ Secret entry cancelled."
   fi
 }
+
 
 load_keychain_secret ANTHROPIC_API_KEY
 load_keychain_secret DEEPSEEK_API_KEY
